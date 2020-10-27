@@ -1,12 +1,18 @@
 # 模糊抓取订阅链接
-- type: webfuzzsub
-  options:
-    url: https://raw.githubusercontent.com/du5/free/master/sub.list
+# - type: webfuzzsub
+#   options:
+#     # url: https://raw.githubusercontent.com/du5/free/master/sub.list
 
 # 订阅链接
 - type: subscribe
   options:
     url: https://raw.githubusercontent.com/ssrsub/ssr/master/v2ray
+- type: subscribe # for ps field int type test
+  options:
+    url: https://raw.githubusercontent.com/ntkernel/lantern/master/vmess_base64.txt
+- type: subscribe # for ps field int type test
+  options:
+    url: https://www.qsc.zju.edu.cn/box/-vmess
 
 # 网页模糊抓取
 - type: webfuzz
@@ -25,5 +31,5 @@
     url: https://fanqiangdang.com/forum-48-1.html
 
 # 某个网站抓取
-- type: web-freessrxyz
+- type: web-freessrxyz # for adding an extra character at index 15 per line
   options:
